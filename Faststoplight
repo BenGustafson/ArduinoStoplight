@@ -1,0 +1,45 @@
+int Flurginhammer =12; // initialize digital pin 8.
+int Smashmouth7 =7; // initialize digital pin 7.
+int Fartinmartin4 =4; // initialize digital pin 4.
+
+
+void setup()
+{
+pinMode(Flurginhammer, OUTPUT);// set the pin with red LED as “output”
+pinMode(Smashmouth7, OUTPUT); // set the pin with yellow LED as “output”
+pinMode(Fartinmartin4, OUTPUT); // set the pin with green LED as “output”
+}
+
+
+//ENTIRE LOOP SEQUENCE
+void loop()
+//GREEN LED
+
+
+
+{
+digitalWrite(Fartinmartin4, HIGH);//// turn on green LED
+delay(100);// wait 5 seconds
+digitalWrite(Fartinmartin4, LOW); // turn off green LED
+
+
+
+//FOR LOOP ON YELLOW LED
+
+for(int i=0;i<3;i++)// blinks for 3 times
+{
+delay(50);// wait 0.5 second
+digitalWrite(Smashmouth7, HIGH);// turn on yellow LED
+delay(50);// wait 0.5 second
+digitalWrite(Smashmouth7, LOW);// turn off yellow LED
+} 
+
+
+
+
+//RED LED
+delay(100);// wait 0.5 second
+digitalWrite(Flurginhammer, HIGH);// turn on red LED
+delay(100);// wait 5 seconds
+digitalWrite(Flurginhammer, LOW);// turn off red LED
+}
